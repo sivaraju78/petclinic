@@ -21,8 +21,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deliver....'
-                echo "My username is $My_User_Credentials_USR"
-                echo "My password is $My_User_Credentials_PSW"
+                echo "My username is ${My_User_Credentials_USR}"
+                echo "My password is ${My_User_Credentials_PSW}"
              //   withCredentials([
              //       usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
              //]) {
