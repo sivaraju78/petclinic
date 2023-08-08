@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Deliver....'
                 withCredentials([
-                //    usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
+                    usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
              ]) {
                 echo "This is the user / password  ${USER}  ${PWD} "
               }
