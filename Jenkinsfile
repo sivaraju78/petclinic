@@ -25,7 +25,7 @@ pipeline {
              //]) {
                 echo "This is the user / password  $MY-CREDENTIALS_USR "
                 echo "this is my password $MY-CREDENTIALS_PSW"
-              }
+              //}
             }
         }
     }
