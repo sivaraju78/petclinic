@@ -20,11 +20,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deliver....'
-                withCredentials([
-                    userNamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
-            ]) {
+               // withCredentials([
+                //    userNamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
+           // ]) {
                 echo "This is the user / password  ${USER}  ${PWD} "
-            }
+         //   }
             }
         }
     }
