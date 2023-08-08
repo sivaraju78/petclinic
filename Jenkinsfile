@@ -9,7 +9,7 @@ pipeline {
             steps {
                 echo "Building application"
                 echo "The build verion is ${NEW_VERSION}"
-                echo "the credials is ${MY-CREDENTIALS}"
+                // echo "the credials is ${MY-CREDENTIALS}"
             }
         }
         stage('Test') {
