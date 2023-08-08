@@ -2,7 +2,7 @@ pipeline {
     agent any 
     environment {
         NEW_VERSION = '1.3.4'
-        // MY-CREDENTIALS = credentials('server-credentials')
+         MY-CREDENTIALS = credentials('server-credentials')
     }
     stages {
         stage('Build') {
@@ -20,10 +20,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deliver....'
-                withCredentials([
-                    usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
-             ]) {
-                echo "This is the user / password  ${USER}  ${PWD} "
+             //   withCredentials([
+             //       usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD  )
+             //]) {
+                echo "This is the user / password  $MY-CREDENTIALS_USR "
+                echo "this is my password $MY-CREDENTIALS_PSW"
               }
             }
         }
