@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     environment {
-        NEW-VERSION = "1.3.4'"
+        NEW-VERSION = "1.3.4"
         // MY-CREDENTIALS = credentials('server-credentials')
     }
     stages {
