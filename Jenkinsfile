@@ -1,14 +1,14 @@
 pipeline {
     agent any 
     environment {
-        NEW-VERSION = "1.3.4"
+        NEW_VERSION = '1.3.4'
         // MY-CREDENTIALS = credentials('server-credentials')
     }
     stages {
         stage('Build') {
             steps {
                 echo "Building application"
-                echo "The build verion is ${NEW-VERSION}"
+                echo "The build verion is ${NEW_VERSION}"
                 echo "the credials is ${MY-CREDENTIALS}"
             }
         }
