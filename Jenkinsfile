@@ -2,7 +2,8 @@ pipeline {
     agent any 
     environment {
         NEW_VERSION = '1.3.4'
-         MY-CREDENTIALS = credentials('server-credentials')
+         //MY-CREDENTIALS = credentials('server-credentials')
+      My_User_Credentials = credentials('server-credentials')
     }
     stages {
         stage('Build') {
